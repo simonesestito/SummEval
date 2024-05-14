@@ -132,7 +132,7 @@ You can also install summ_eval from source:
 
 ```
 git clone https://github.com/Yale-LILY/SummEval.git
-cd evaluation
+cd SummEval/evaluation
 pip install -e .
 ```
 
