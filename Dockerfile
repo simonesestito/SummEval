@@ -7,7 +7,8 @@ WORKDIR /app
 RUN pip install summ_eval
 
 # Install (and replace) the package with its latest version
-RUN git clone https://github.com/Yale-LILY/SummEval.git
+COPY evaluation/ /app/SummEval/evaluation
+COPY data_processing/ /app/SummEval/data_processing
 WORKDIR /app/SummEval/evaluation
 RUN pip install -e .
 
