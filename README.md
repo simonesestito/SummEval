@@ -142,6 +142,13 @@ You can test your installation (assuming you're in the `./summ_eval` folder) and
 python -m unittest discover
 ```
 
+Finally, you may also choose to install it using Docker:
+```sh
+git clone https://github.com/Yale-LILY/SummEval.git
+docker build -t summeval:latest SummEval
+docker run -it --rm summeval:latest
+```
+
 
 ### Command-line interface
 We provide a command-line interface `calc-scores` which makes use of [gin config](https://github.com/google/gin-config) files to set metric parameters. 
